@@ -1,0 +1,104 @@
+/*------------------------------         
+	Media Query 
+------------------------------*/ 
+ 
+@media all and (max-width: 1500px) 
+{  
+    body{
+        overflow-x: hidden;
+    }
+} 
+ 
+ 
+@media all and (max-width: 1200px) 
+{     
+    body{
+        overflow-x: hidden;
+    }
+} 
+ 
+ 
+@media all and (max-width: 991px) 
+{    
+    body{
+        overflow-x: hidden;
+    }
+    .about{
+        display: block;
+    }    
+    .about-image{
+        display: block;
+        text-align: center;
+    }
+} 
+
+ 
+@media all and (max-width: 768px) {    
+    body{
+        overflow-x: hidden;
+    }
+    .nav-menu h1{
+        font-size: 32px;
+        margin-bottom: 5px;
+    }
+    .nav-menu{
+        display: block;
+        text-align: center;
+    }
+    .nav-menu ul{
+        margin-left: 30px;
+    }
+    .skills{
+        display: block;
+        text-align: center;
+    }
+    .skills i{margin-bottom: 5px;}
+    .skills h2{
+        margin-bottom: 5px;
+    }
+    .final-section h3{
+        font-size: 12px;
+    }
+    .nav-menu ul{
+        margin-left: 15px;
+    }
+} 
+
+ 
+ 
+@media all and (max-width: 480px) {    
+    img{
+        width: 100%;
+    }
+} 
+ 
+@media all and (max-width: 430px) {    
+    .nav-menu ul li{
+        font-size: 10px;
+        padding: 0px;
+        
+    }
+    .nav-menu ul{
+        margin-left: 5px;
+    }
+} 
+
+@media all and (max-width: 320px) {    
+    .nav-menu h1{
+        font-size: 22px;
+    }
+    .nav-menu ul li{
+        margin: 0;
+        font-size: 4px;
+    }
+    .contact-me h2{
+        font-size: 26px;
+    }
+    .final-section h3{
+        font-size: 8px;
+    }
+    .social-connects i{
+        font-size: 16px;
+    }
+} 
+ 
