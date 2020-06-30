@@ -1,8 +1,10 @@
 /* ---------------------------------
     color themes for website 
-1. black color:#292726;
-2. extreme light blue :#DAD2FC;
-3. red:#FF391D;
+1. for navugation menu : #0E273C;
+2. for hover links and 2nd color :#A167A5;
+3. middle skills color :#4A306D;
+4. main text color : #E8D7F1
+5. secondary text color : #D3BCCC;
 -------------------------------------*/
 
 /* ---------------------
@@ -31,7 +33,7 @@ body {
 /* header styling */
 
 .menu{
-    background-color: #292726;
+    
 }
 
 .nav-menu{
@@ -39,6 +41,8 @@ body {
     justify-content: space-between;
     padding: 10px;
     align-items: center;
+    background-color:#0E273C;
+    
 }
 
 .nav-menu ul{
@@ -58,17 +62,17 @@ body {
     text-transform:capitalize;
     word-spacing: 4px;
     letter-spacing: 2px;
-    color: #DAD2FC;
+    color: #E8D7F1;
     margin-left: 20px;
 }
 
 .nav-menu span{
-    color: #FF391D;
+    color: #A167A5;
 }
 
 .nav-menu a{
     text-decoration: none;
-    color: #DAD2FC;
+    color: #E8D7F1;
     font-size: 18px;
     font-family:'Roboto', sans-serif;
     padding: 20px;
@@ -76,19 +80,19 @@ body {
 }
 
 .nav-menu a:hover{
-    background-color: #FF391D;
+    background-color: #A167A5;
     color:white;
 }
 
 .image{
     background:linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/first.jpg);
     width: 100vw;
-    height:70vh;
+    height:90vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
-    color: #DAD2FC;
+    color: #E8D7F1;
     text-align: center;
     vertical-align: middle;
     display: flex;
@@ -97,11 +101,44 @@ body {
 }
 
 .image h2{
-    font-size: 38px;
+    font-size: 58px;
     letter-spacing: 2px;
     margin-bottom: 10px;
 }
 
+#arrow-down {
+    position: absolute;
+    left: 50%;
+    bottom: 40px;
+    width: 26px;
+    height: 26px;
+    text-align: center;
+    margin-left: -13px;
+    z-index: 9999;
+    border: solid #fff;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    animation: animatedArrow 2s infinite;
+    cursor: pointer;
+}
+
+@keyframes animatedArrow {
+    0% {
+        bottom: 40px;
+    }
+
+    30% {
+        bottom: 25px;
+        border-color: #0E273C;
+    }
+
+    100% {
+        bottom: 40px;   
+    } 
+}
 
 /* about section */
 
@@ -111,7 +148,8 @@ body {
     margin-bottom: 80px;
 }
 .about {
-    background-color: #DAD2FC;
+    background-color: #D3BCCC;
+    color: #0E273C;
     padding:30px;
     width: 70%;
     display: flex;
@@ -126,18 +164,19 @@ body {
     border: 4px solid transparent;
     filter: grayscale(100%);
     transition: all 0.5s linear;
+    width:20vw;
 }
 
 .about-image img:hover{
     cursor: pointer;
     filter: none;
     border-radius: 150px;
-    border: 4px solid black;
+    border: 4px solid #A167A5;
 }
 
 .about-text h2{
     margin-bottom: 10px;
-    border-bottom: 2px solid red;
+    border-bottom: 2px solid #A167A5;
     font-size: 28px;
     word-spacing: 2px;
     letter-spacing: 4px;
@@ -161,7 +200,7 @@ body {
 .my-skills{
     margin-top: 20px;
     padding: 50px;
-    background-color: #292726;
+    background-color: #0E273C;
 }
 
 .my-skills h1{
@@ -170,22 +209,22 @@ body {
     word-spacing: 2px;
     letter-spacing: 4px;
     font-size:36px;
-    border-bottom: 4px solid #DAD2FC;
-    color: #DAD2FC;
+    border-bottom: 4px solid #E8D7F1;
+    color: #E8D7F1;
 }
 
 .skills{
     padding: 20px;
     margin-bottom: 30px;
-    background-color: #FF391D;
-    color:#DAD2FC;
+    background-color: #D3BCCC;
+    color:#0E273C;
     box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
     display: flex;
 }
 
 .skills:nth-child(3){
-    background-color: #DAD2FC;
-    color: #FF391D;
+    background-color: #4A306D;
+    color: #D3BCCC;
 }
 
 .for-flex{
@@ -202,17 +241,17 @@ body {
 
 .contact-me{
     padding: 50px;
-    background-color: #DAD2FC;
+    background-color: #D3BCCC;
 }
 
 .contact-me h2{
     font-size:36px;
-    color: #292726;
+    color: #0E273C;
     text-transform: capitalize;
     word-spacing: 4px;
     letter-spacing: 2px;
     margin-bottom: 20px;
-    border-bottom: 4px solid #292726;;
+    border-bottom: 4px solid #0E273C;
 }
 
 .contact-me p{
@@ -223,14 +262,26 @@ form{
     display: flex;
     flex-direction: column;
 }
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
 
 input{
     font-size: 20px;
     padding: 10px;
     margin-bottom: 30px;
+    border:2px solid #4A306D;
     border-radius: 10px;
     background-color: transparent;
-    color: #292726;
+    color: white;
 }
 
 textarea{
@@ -238,10 +289,10 @@ textarea{
     resize: none;
     font-size: 20px;
     padding: 10px;
+    border:2px solid #4A306D;
     border-radius: 10px;
-    border-color: black;
     background-color: transparent;
-    color: #292726;
+    color: white;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -250,18 +301,18 @@ button
     font-size: 20px;
     padding: 10px;
     margin-bottom: 30px;
+    border:2px solid #4A306D;
     border-radius: 10px;
     transition: all 0.3s ease-in-out;
     background-color: transparent;
-    border-color: black;
 }
 
 button:hover{
     cursor: pointer;
     transform: scale(0.95);
-    border-color: red;
+    border-color: #4A306D;
     color: white;
-    background-color: #FF391D;
+    background-color: #4A306D;
 }
 
 /* social connects design */
@@ -278,7 +329,7 @@ button:hover{
 
 .social-connects i:hover{
     cursor: pointer;
-    color: #FF391D;
+    color: #4A306D;
 }
 
 .social-connects a{
@@ -288,8 +339,8 @@ button:hover{
 /* footer style */
 
 .final-section{
-    background-color: #292726;
-    color: white;
+    background-color: #0E273C;
+    color: #E8D7F1;
 }
 
 .final-section h3{
@@ -310,8 +361,8 @@ button:hover{
 	top:0;     
 	left:0;     
 	z-index: 9999;     
-	background-color: #fff; 
-    width: 100%;     
+	background-color: #D3BCCC;
+    width: 100vw;     
 	height: 100vh;     
 	display: flex;     
 	justify-content: center;     
@@ -327,18 +378,18 @@ button:hover{
 } 
  
 .load :first-child{
-    background:#222;
+    background:#0E273C;
     animation-delay:-1.5s
 } 
 .load :nth-child(2){
-    background:#F79041;
+    background:#4A306D;
     animation-delay:-1s
 } 
 .load :nth-child(3){
-    background:#222;
+    background:#0E273C;
     animation-delay:-0.5s
 } 
-.load :last-child{background:#F79041} 
+.load :last-child{background:#4A306D;} 
  
 @keyframes spin{
     0%,100% {
@@ -370,7 +421,7 @@ button:hover{
     transition: all .5s linear;     
     width: 50px;     
     height: 50px;     
-    background-color: #292726;     
+    background-color: #0E273C;    
     border-radius: 50%;     
     box-shadow: 1px 1px 15px -3px #000;     
     display: flex;     
