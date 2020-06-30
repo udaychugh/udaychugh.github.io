@@ -14,7 +14,7 @@
     <link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
     <link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
     <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="favicon/android-icon-192x192.png">
     <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
@@ -50,15 +50,16 @@
        <div class="image">
            <h2 class="animated fadeInLeft delay-1s" >GeekyCoder</h2>
            <p class="animated fadeInRight delay-2s">A Untypical Developer</p>
+           <a href='#about'><div id="arrow-down"></div></a>
        </div>
    </header> 
-   <section class="about-myself">
+   <section class="about-myself" id="about">
        <div class="about">
-          <div class="about-image">
-            <img src="img/main.jpg" alt="Uday Chugh" class="wow animated fadeInLeft delay-1s">
+          <div class="about-image wow animated fadeInLeft delay-1s">
+            <img src="img/main.jpg" alt="Uday Chugh" class="">
           </div>
            <div class="about-text wow animated fadeInRight delay-1s">
-               <h2 id="about">About Me</h2>
+               <h2>About Me</h2>
                <p>I’m <strong>Uday Chugh</strong>. I’m a designer who codes. Efficient coder in C/C++, Python, Java. Deep Logic Building and Problem Solving Skills. Sufficient knowledge about Computer Architecture and OS Concepts. </p>
            </div>
        </div>
@@ -97,17 +98,19 @@
   method="POST">
            <input type="text" id="name" placeholder="Name" name="name" required>
            <input type="email" id="mailto" name="email" placeholder="Mail" required>
-           <textarea name="message" id="message" rows=5 placeholder="Message">
-           </textarea>
+           <input type="number" id="wanum" name="wanumber" placeholder="WhatsApp Number" min="9" max="10" required>
+           <textarea name="message" id="message" rows=5 placeholder="Message"></textarea>
            
            <button type="submit"><i class="fas fa-paper-plane"></i> Send Message</button>
        </form>
        <div class="social-connects">
            <a href="https://www.facebook.com/chugh.uday" target="_blank" title="Facaebook"><i class="fab fa-facebook-f"></i></a>
            <a href="https://www.instagram.com/uday.chugh" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+           <a href="https://wa.me/918860422191" target="_blank" title="Whatsapp"><i class="fab fa-whatsapp"></i></a>
            <a href="https://www.twitter.com/udaychugh1" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
            <a href="https://www.linkedin.com/in/uday-chugh-620892194" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
            <a href="https://github.com/udaychugh" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+           <a href="" target="_blank" title="Download App" download><i class="fab fa-android"></i></a>
        </div>
    </section>
    <footer class="final-section">
