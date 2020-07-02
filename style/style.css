@@ -418,14 +418,22 @@ button:hover{
     z-index: 1000;     
     display: block;     
     cursor: pointer; 
+    -webkit-transition: all .5s linear; 
     transition: all .5s linear;     
     width: 50px;     
     height: 50px;     
     background-color: #0E273C;    
     border-radius: 50%;     
+    -webkit-box-shadow: 1px 1px 15px -3px #000;     
     box-shadow: 1px 1px 15px -3px #000;     
+    display: -webkit-box;     
+    display: -ms-flexbox;     
     display: flex;     
+    -webkit-box-pack: center;     
+    -ms-flex-pack: center;     
     justify-content: center;     
+    -webkit-box-align: center;     
+    -ms-flex-align: center;     
     align-items: center; 
 } 
  
@@ -434,6 +442,7 @@ button:hover{
     border-width: 0 3px 3px 0;    
     display: inline-block;    
     padding: 6px;    
+    -webkit-transform: rotate(-135deg);    
     transform: rotate(-135deg); 
 } 
 
