@@ -413,8 +413,8 @@ button:hover{
 .backtotop 
 {     
     position: fixed;     
-    bottom: 20px;     
-    right: 20px;     
+    bottom: 90px;     
+    right: 25px;     
     z-index: 1000;     
     display: block;     
     cursor: pointer; 
