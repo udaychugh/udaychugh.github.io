@@ -85,7 +85,7 @@ body {
 }
 
 .image{
-    background:linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(../img/first.jpg);
+    background:linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(https://media.giphy.com/media/26tn33aiTi1jkl6H6/giphy.gif);
     width: 100vw;
     height:90vh;
     background-position: center;
