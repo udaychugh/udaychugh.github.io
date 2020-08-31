@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <!-- fav icons -->
     <link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
     <link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
@@ -22,108 +23,272 @@
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
-    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/media-query.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,700&family=Vollkorn:ital,wght@1,900&display=swap" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css" rel="stylesheet">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css" rel="stylesheet">
-    
+    <link rel="stylesheet" href="style/animate.css">
+
+
     <!-- Awesome font -->
-    
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
-    
+
     <title>UDAY CHUGH</title>
-    
+
 </head>
 
 <body>
-   <header class="menu" id="home">
-       <div class="nav-menu">
-           <h1 class="heading">uday <span>chugh</span></h1>
-           <ul>
-               <li><a href="#about">About</a></li>
-               <li><a href="#skill">Skills</a></li>
-               <li><a href="#contact">Contact</a></li>
-           </ul>
-       </div>
-       <div class="image">
-           <h2 class="wow animated fadeInLeft delay-1s" >GeekyCoder</h2>
-           <p class="wow animated fadeInRight delay-2s">Untypical Developer</p>
-           <a href='#about'><div id="arrow-down"></div></a>
-       </div>
-   </header> 
-   <section class="about-myself" id="about">
-       <div class="about">
-          <div class="about-image wow animated fadeInLeft delay-1s">
-            <img src="img/main.jpg" alt="Uday Chugh" class="">
-          </div>
-           <div class="about-text wow animated fadeInRight delay-1s">
-               <h2>About Me</h2>
-               <p>I’m <strong>Uday Chugh</strong>. I’m a designer who codes. Efficient coder in C/C++, Python, Java. Deep Logic Building and Problem Solving Skills. Sufficient knowledge about Computer Architecture and OS Concepts. </p>
-           </div>
-       </div>
-   </section>
-   <section class="my-skills">
-      <h1 id="skill">my skills</h1>
-       <div class="skills wow animated fadeInLeft">
-          <i class="fas fa-edit"></i>   
-          <div class="for-flex">
-               <h2>graphics and web designer</h2>
-               <p>Proficiency in Photoshop, Illustrator or other visual design and wire-framing tools <br>
-               Proficiency in HTML, CSS, and JavaScript for rapid prototyping</p>
-           </div>
-       </div>
-       <div class="skills wow animated pulse delay-2s">
-          <i class="fas fa-shield-alt"></i>
-          <div class="for-flex">
-               <h2>web application security specialist</h2>
-               <p>Proficiency in networking, knows how to find weaknesses/vulnerabilities in target systems.</p>
-           </div>
-       </div>
-       <div class="skills wow animated fadeInRight">
-          <i class="fas fa-laptop-code"></i>
-           <div class="for-flex">
-               <h2>skilled programer</h2>
-               <p>Efficient coder in C/C++, Python, Java. Deep Logic Building and Problem Solving Skills.</p>
-           </div>
-       </div>
-   </section>
-   <section class="contact-me" id="contact">
-      <h2>contact me</h2>
-      <p>I'd love your feedback!
-
-</p>
-       <form  action="https://formspree.io/mvowbkjq"
-  method="POST">
-           <input type="text" id="name" placeholder="Name" name="name" required>
-           <input type="email" id="mailto" name="email" placeholder="Mail" required>
-           <input type="number" id="wanum" name="wanumber" placeholder="WhatsApp Number" required>
-           <textarea name="message" id="message" rows=5 placeholder="Message"></textarea>
+    <header class="menu" id="home">
+       <!-- Mobile menu --> 
+        <a href="javascript:void(0);" class="open-button" onclick="myFunction()">
+           <span></span>
+           <span></span>
+           <span></span>
            
-           <button type="submit"><i class="fas fa-paper-plane"></i> Send Message</button>
-       </form>
-       <div class="social-connects">
-           <a href="https://www.facebook.com/chugh.uday" target="_blank" title="Facaebook"><i class="fab fa-facebook-f"></i></a>
-           <a href="https://www.instagram.com/uday.chugh" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
-           <a href="https://wa.me/918860422191" target="_blank" title="Whatsapp"><i class="fab fa-whatsapp"></i></a>
-           <a href="https://www.twitter.com/udaychugh1" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
-           <a href="https://www.linkedin.com/in/uday-chugh-620892194" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-           <a href="https://github.com/udaychugh" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
-           <a href="" target="_blank" title="Download App" download><i class="fab fa-android"></i></a>
-       </div>
-   </section>
-   <footer class="final-section">
-       <h3>&copy; uday chugh 2020. all right reserved</h3>
-   </footer>
-   <a href="#home"><div class="backtotop"><div></div></div></a> 
-    <div class="load">     
-	    <hr/><hr/><hr/><hr/> 
-    </div>
-    <script src="https://code.jquery.com/jquery-3.4.0.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script> 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script> 
-    <script src="js/script.js"></script>
+        </a>
+        <div class="nav-menu" id="navbar">
+            <h1 class="heading" id="logo">uday <span>chugh</span></h1>
+            <ul class="nav-display hide">
+                <li><a class="child" href="#about">About</a></li>
+                <li><a class="child" href="#skill">Skills</a></li>
+                <li><a class="child" href="#projects">Projects</a></li>
+                <li><a class="child" href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <div class="image">
+            <h2 class="wow animated fadeInLeft delay-1s">GeekyCoder</h2>
+            <p class="wow animated fadeInRight delay-2s">Untypical Developer</p>
+            <a href='#about'>
+                <div id="arrow-down"></div>
+            </a>
+        </div>
+    </header>
+    
+    <section class="about-myself" id="about">
+        <div class="about">
+            <div class="about-image wow animated fadeInLeft delay-1s">
+                <img src="img/main.jpg" alt="Uday Chugh" class="">
+            </div>
+            <div class="about-text wow animated fadeInRight delay-1s">
+                <h2>About Me</h2>
+                <p>I’m <strong>Uday Chugh</strong>. I’m a designer who codes. I love applying responsive design principles and watching my web pages shrink into mobile screens and still look amazing. It's oddly satisfying. I think in a way I'm kind of those web pages; I'm moldable, but I still keep my creative flare intact. <br> My specialties include quickly learning new skills and programming languages, problem solving, responsive design principles, website optimization. So far I have HTML, CSS, JavaScript, C/C++, Python and Java under my belt. I've started learning Kotlin. I'm still enthusiastically grabbing into any other programming languages, frameworks, or principle I can integrate into the coding web in my head. </p>
+            </div>
+        </div>
+        <img src="img/animate_icon/Ellipse_7.png" alt="" class="feature_icon_1 custom-animation1">
+        <img src="img/animate_icon/Ellipse_8.png" alt="" class="feature_icon_2 custom-animation2">
+        <img src="img/animate_icon/Ellipse_1.png" alt="" class="feature_icon_3 custom-animation3">
+        <img src="img/animate_icon/Ellipse_2.png" alt="" class="feature_icon_4 custom-animation4">
+        <img src="img/animate_icon/Ellipse_3.png" alt="" class="feature_icon_5 custom-animation5">
+        <img src="img/animate_icon/Ellipse_4.png" alt="" class="feature_icon_6 custom-animation6">
+        <img src="img/animate_icon/Ellipse_7.png" alt="" class="feature_icon_1 custom-animation1">
+        <img src="img/animate_icon/Ellipse_8.png" alt="" class="feature_icon_2 custom-animation2">
+        <img src="img/animate_icon/Ellipse_1.png" alt="" class="feature_icon_3 custom-animation3">
+        <img src="img/animate_icon/Ellipse_2.png" alt="" class="feature_icon_4 custom-animation4">
+    </section>
 
+    <section class="my-skills" id="skill">
+        <h1>my skills</h1>
+        <div class="skill-box">
+
+            <div class="box" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                <div class="percent">
+                    <svg>
+                        <circle cx="70" cy="70" r="70"></circle>
+                        <circle class="circle" cx="70" cy="70" r="70"></circle>
+                    </svg>
+                    <div class="number">
+                        <h2>95<span>%</span></h2>
+                    </div>
+                </div>
+                <h2 class="text">Adobe Photoshop</h2>
+            </div>
+
+            <div class="box" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                <div class="percent">
+                    <svg>
+                        <circle cx="70" cy="70" r="70"></circle>
+                        <circle class="circle2" cx="70" cy="70" r="70"></circle>
+                    </svg>
+                    <div class="number">
+                        <h2>92<span>%</span></h2>
+                    </div>
+                </div>
+                <h2 class="text">CorelDraw</h2>
+            </div>
+
+            <div class="box" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                <div class="percent">
+                    <svg>
+                        <circle cx="70" cy="70" r="70"></circle>
+                        <circle class="circle3" cx="70" cy="70" r="70"></circle>
+                    </svg>
+                    <div class="number">
+                        <h2>93<span>%</span></h2>
+                    </div>
+                </div>
+                <h2 class="text">HTML, CSS and Jquery</h2>
+            </div>
+
+            <div class="box" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                <div class="percent">
+                    <svg>
+                        <circle cx="70" cy="70" r="70"></circle>
+                        <circle cx="70" cy="70" class="circle4" r="70"></circle>
+                    </svg>
+                    <div class="number">
+                        <h2>87<span>%</span></h2>
+                    </div>
+                </div>
+                <h2 class="text">Python</h2>
+            </div>
+
+            <div class="box" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                <div class="percent">
+                    <svg>
+                        <circle cx="70" cy="70" r="70"></circle>
+                        <circle cx="70" cy="70" r="70" class="circle5"></circle>
+                    </svg>
+                    <div class="number">
+                        <h2>94<span>%</span></h2>
+                    </div>
+                </div>
+                <h2 class="text">C/C++</h2>
+            </div>
+
+            <div class="box" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                <div class="percent">
+                    <svg>
+                        <circle cx="70" cy="70" r="70"></circle>
+                        <circle class="circle6" cx="70" cy="70" r="70"></circle>
+                    </svg>
+                    <div class="number">
+                        <h2>85<span>%</span></h2>
+                    </div>
+                </div>
+                <h2 class="text">Web Application Security</h2>
+            </div>
+
+            <div class="box" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                <div class="percent">
+                    <svg>
+                        <circle cx="70" cy="70" r="70"></circle>
+                        <circle cx="70" cy="70" class="circle7" r="70"></circle>
+                    </svg>
+                    <div class="number">
+                        <h2>96<span>%</span></h2>
+                    </div>
+                </div>
+                <h2 class="text">MS-Office</h2>
+            </div>
+
+            <div class="box" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+                <div class="percent">
+                    <svg>
+                        <circle cx="70" cy="70" r="70"></circle>
+                        <circle cx="70" cy="70" class="circle8" r="70"></circle>
+                    </svg>
+                    <div class="number">
+                        <h2>85<span>%</span></h2>
+                    </div>
+                </div>
+                <h2 class="text">MySQL</h2>
+            </div>
+
+            <div class="box" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
+                <div class="percent">
+                    <svg>
+                        <circle cx="70" cy="70" r="70"></circle>
+                        <circle cx="70" cy="70" class="circle9" r="70"></circle>
+                    </svg>
+                    <div class="number">
+                        <h2>87<span>%</span></h2>
+                    </div>
+                </div>
+                <h2 class="text"></h2>
+            </div>
+
+        </div>
+    </section>
+
+
+    <section class="my-projects" id="projects">
+        <h2>my projects</h2>
+        <div class="projects-contents">
+            <div class="projects" data-aos="fade-right">
+                <img src="img/weather-app.JPG" height="200" width="400" alt="project">
+                <h3 onclick="window.open('https://udaychugh.github.io/weather');">weather app</h3>
+            </div>
+            <div class="projects" data-aos="fade-left">
+                <img src="img/text-speech.JPG" height="200" width="400" alt="project">
+                <h3 onclick="window.open('https://udaychugh.github.io/text-to-multiple-speech');">text to multiple speech</h3>
+            </div>
+            <div class="projects" data-aos="fade-right">
+                <img src="img/password-generator.JPG" height="200" width="400" alt="project">
+                <h3 onclick="window.open('https://udaychugh.github.io/password-generator');">password generator</h3>
+            </div>
+            <div class="projects" data-aos="fade-left">
+                <img src="img/data-entry-gui.JPG" height="200" width="400" alt="project">
+                <h3 onclick="window.open('https://github.com/udaychugh');">data entry (python)</h3>
+            </div>
+
+        </div>
+        <h3><a href="porjects.html" target="_blank">more projects &rarr;</a></h3>
+    </section>
+
+   
+    
+
+    <section class="contact-me" id="contact">
+        <h2>contact me</h2>
+        <p>I'd love your feedback!
+
+        </p>
+        <form action="https://formspree.io/mvowbkjq" method="POST">
+            <input type="text" id="name" placeholder="Name" name="name" required>
+            <input type="email" id="mailto" name="email" placeholder="Mail" required>
+            <input type="number" id="wanum" name="wanumber" placeholder="WhatsApp Number" min="9" max="10" required>
+            <textarea name="message" id="message" rows=5 placeholder="Message"></textarea>
+
+            <button type="submit" class="btn-animation"><i class="fas fa-paper-plane"></i>Send Message</button>
+        </form>
+        <div class="social-connects">
+            <a href="https://www.facebook.com/chugh.uday" target="_blank" title="Facaebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/uday.chugh" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/918860422191" target="_blank" title="Whatsapp"><i class="fab fa-whatsapp"></i></a>
+            <a href="https://www.twitter.com/udaychugh1" target="_blank" title="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/uday-chugh-620892194" target="_blank" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://github.com/udaychugh" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+        </div>
+    </section>
+    <footer class="final-section">
+        <h3>created by uday chugh</h3>
+    </footer>
+    <a href="#home">
+        <div class="backtotop">
+            <div></div>
+        </div>
+    </a>
+    
+    <!--<div class="box-loader">
+        <div class="circle-loader" id="one1">
+            <div class="circle" id="two2">
+                <div class="circle" id="three3"></div>
+            </div>
+        </div>
+    </div>-->
+   
+    <script src="https://code.jquery.com/jquery-3.4.0.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+       
 </body>
+
 </html>
