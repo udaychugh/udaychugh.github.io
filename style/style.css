@@ -538,66 +538,107 @@ body {
     margin-top: 50px;
 }
 
-.my-projects h3 a{
-    border: 2px solid #0E273C;
-    padding:10px 30px;
+.my-projects a{
+    position: relative;
+    display: inline-block;
+    padding: 25px 30px;
+    margin: 40px 0;
+    color: #51FF14;
     text-decoration: none;
-    transition: all 0.5s linear;
-    animation-name: button-animate;
-    animation-iteration-count: infinite;
-    animation-duration: 4s;
-    animation-timing-function: linear;
+    text-transform: uppercase;
+    transition: 0.5s;
+    letter-spacing: 4px;
+    overflow: hidden;
+    margin-right: 50px;
 }
 
-@keyframes button-animate{
+.my-projects a:hover{
+    background: #51FF14;
+    color: black;
+    box-shadow: 0 0 5px #51FF14,
+        0 0 25px #51FF14,
+        0 0 50px #51FF14,
+        0 0 200px #51FF14;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #00005);
+}
+
+.my-projects a span{
+    position: absolute;
+    display: block;
+}
+
+.my-projects a span:nth-child(1){
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #51FF14);
+    animation: animate1 1s linear infinite;
+}
+
+@keyframes animate1{
     0%{
-        background-color: black;
-        color: white;
+        left: -100%;
     }
-    20%{
-        background-color: dimgrey;
-        color: aliceblue;
-    }
-    40%{
-        background-color: darkgrey;
-        color: black;
-    }
-    60%{
-        background-color: bisque;
-        color: black;
-    }
-    80%{
-        background-color: aqua;
-        color: white;
-    }
-    100%{
-        background-color: white;
-        color: black;
-    }
+        50%,100%{
+            left: 100%;
+        }
 }
 
-.my-projects h3 a:hover{
-    border-radius: 15px;
-    color: white;
-    background-color: aqua;
-    animation-name: hover-animate;
-    animation-iteration-count: infinite;
-    animation-duration: 1s;
-    animation-timing-function: linear;
+.my-projects a span:nth-child(2){
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #51FF14);
+    animation: animate2 1s linear infinite;
+    animation-delay: 0.25s;
 }
 
-@keyframes hover-animate{
+@keyframes animate2{
     0%{
-        font-size: 22px;
+        top: -100%;
     }
-    30%{
-        font-size: 20px; 
+    50%,100%{
+        top: 100%;
     }
-    60%{
-        font-size: 20px 
+}
+
+.my-projects a span:nth-child(3){
+    bottom: 0;
+    right: 0;
+    width: 100px;
+    height: 2px;
+    background: linear-gradient(270deg, transparent, #51FF14);
+    animation: animate3 1s linear infinite;
+    animation-delay: 0.50s;
+}
+
+@keyframes animate3{
+    0%{
+        right: -100%;
     }
-    100%{
-        font-size: 22px;
+    50%,100%{
+        right: 100%;
+    }
+}
+
+.my-projects a span:nth-child(4){
+    bottom: -100%;
+    left: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(360deg, transparent, #51FF14);
+    animation: animate4 1s linear infinite;
+    animation-delay: 0.75s;
+}
+
+@keyframes animate4{
+    0%{
+        bottom: -100%;
+    }
+    50%,100%{
+        bottom: 100%;
     }
 }
 
@@ -785,6 +826,32 @@ button:hover{
     letter-spacing: 2px;
 }
 
+.final-section h3 span{
+    cursor: pointer;
+    transition: all 0.5s linear;
+}
+
+.final-section h3 span:hover{
+    animation-name: heart;
+    animation-iteration-count: infinite;
+    animation-duration: 2s;
+}
+
+@keyframes heart{
+    0%{
+        font-size: 12px;
+    }
+    40%{
+        font-size: 18px;
+    }
+    80%{
+        font-size: 22px;
+    }
+    100%{
+        font-size: 18px;
+    }
+}
+
 
 /*------------------------------           
 	Preloader 
@@ -889,5 +956,4 @@ button:hover{
 .hidden {     
     display: none; 
 } 
-
 
