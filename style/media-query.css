@@ -30,6 +30,9 @@
         display: block;
         text-align: center;
     }
+    .for-hide img{
+        display: none;    
+    }
 } 
 
  
@@ -87,8 +90,8 @@
     img{
         width: 100%;
     }
-    .about img{
-        
+    .for-hide img{
+        display: none;    
     }
 } 
  
@@ -108,5 +111,4 @@
         font-size: 16px;
     }
 } 
- 
  
