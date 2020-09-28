@@ -248,28 +248,21 @@ body {
     letter-spacing: 2px;
 }
 
-.final-section h3 span{
+.final-section h3 i{
     cursor: pointer;
-    transition: all 0.5s linear;
+    transition: all 0.1s;
+    color: red;
 }
 
-.final-section h3 span:hover{
+.final-section h3 i:hover{
     animation-name: heart;
     animation-iteration-count: infinite;
-    animation-duration: 2s;
+    animation-duration: 0.5s;
 }
 
 @keyframes heart{
-    0%{
-        font-size: 12px;
-    }
-    40%{
-        font-size: 18px;
-    }
-    80%{
-        font-size: 22px;
-    }
     100%{
-        font-size: 18px;
+        transform: scale(2.0);
     }
 }
+
