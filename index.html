@@ -42,21 +42,27 @@
 
 <body>
     <header class="menu" id="home">
-       <!-- Mobile menu --> 
-        <a href="javascript:void(0);" class="open-button" onclick="myFunction()">
-           <span></span>
-           <span></span>
-           <span></span>
-           
-        </a>
-        <div class="nav-menu" id="navbar">
-            <h1 class="heading" id="logo">uday <span>chugh</span></h1>
-            <ul class="nav-display hide">
-                <li><a class="child" href="#about">About</a></li>
-                <li><a class="child" href="#skill">Skills</a></li>
-                <li><a class="child" href="#projects">Projects</a></li>
-                <li><a class="child" href="#contact">Contact</a></li>
+        <input type="checkbox" id="hamburger-toggle">
+
+        <label for="hamburger-toggle" class="hamburger-wrapper">
+            <span class="hamburger"></span>
+        </label>
+
+        <nav class="navbar">
+            <ul class="nav-list">
+                <li><a href="#about" onclick="uncheck()">about</a></li>
+                <li><a href="#skill" onclick="uncheck()">skills</a></li>
+                <li><a href="#projects" onclick="uncheck()">projects</a></li>
+                <li><a href="#contact" onclick="uncheck()">contact</a></li>
             </ul>
+        </nav>
+
+        <div class="nav-menu" id="navbar">
+
+            <h1 class="heading" id="logo">uday <span>chugh</span></h1>
+
+
+
         </div>
         <div class="image">
             <h2 class="wow animated fadeInLeft delay-1s">GeekyCoder</h2>
@@ -66,7 +72,7 @@
             </a>
         </div>
     </header>
-    
+
     <section class="about-myself" id="about">
         <div class="about">
             <div class="about-image wow animated fadeInLeft delay-1s">
@@ -93,125 +99,70 @@
 
     <section class="my-skills" id="skill">
         <h1>my skills</h1>
-        <div class="skill-box">
+        <div id="skills">
+            <div class="col-lg-6">
+                <div class="skillbar clearfix " data-percent="93%">
+                    <div class="skillbar-title" style="background: linear-gradient(to right, #659999, #f4791f);"><span>HTML5</span></div>
+                    <div class="skillbar-bar" style="background: linear-gradient(to right, #659999, #f4791f);"></div>
+                    <div class="skill-bar-percent">93%</div>
+                </div> <!-- End Skill Bar -->
 
-            <div class="box" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
-                <div class="percent">
-                    <svg>
-                        <circle cx="70" cy="70" r="70"></circle>
-                        <circle class="circle" cx="70" cy="70" r="70"></circle>
-                    </svg>
-                    <div class="number">
-                        <h2>95<span>%</span></h2>
-                    </div>
-                </div>
-                <h2 class="text">Adobe Photoshop</h2>
-            </div>
+                <div class="skillbar clearfix " data-percent="93%">
+                    <div class="skillbar-title" style="background: linear-gradient(to right, #dd3e54, #6be585);"><span>CSS3</span></div>
+                    <div class="skillbar-bar" style="background: linear-gradient(to right, #dd3e54, #6be585);"></div>
+                    <div class="skill-bar-percent">93%</div>
+                </div> <!-- End Skill Bar -->
 
-            <div class="box" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
-                <div class="percent">
-                    <svg>
-                        <circle cx="70" cy="70" r="70"></circle>
-                        <circle class="circle2" cx="70" cy="70" r="70"></circle>
-                    </svg>
-                    <div class="number">
-                        <h2>92<span>%</span></h2>
-                    </div>
-                </div>
-                <h2 class="text">CorelDraw</h2>
-            </div>
+                <div class="skillbar clearfix " data-percent="90%">
+                    <div class="skillbar-title" style="background: linear-gradient(to right, #8360c3, #2ebf91);"><span>jQuery</span></div>
+                    <div class="skillbar-bar" style="background: linear-gradient(to right, #8360c3, #2ebf91);"></div>
+                    <div class="skill-bar-percent">90%</div>
+                </div> <!-- End Skill Bar -->
 
-            <div class="box" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
-                <div class="percent">
-                    <svg>
-                        <circle cx="70" cy="70" r="70"></circle>
-                        <circle class="circle3" cx="70" cy="70" r="70"></circle>
-                    </svg>
-                    <div class="number">
-                        <h2>93<span>%</span></h2>
-                    </div>
-                </div>
-                <h2 class="text">HTML, CSS and Jquery</h2>
-            </div>
+                <div class="skillbar clearfix " data-percent="95%">
+                    <div class="skillbar-title" style="background: linear-gradient(to right, #009fff, #ec2f4b);"><span>Photoshop</span></div>
+                    <div class="skillbar-bar" style="background: linear-gradient(to right, #009fff, #ec2f4b);"></div>
+                    <div class="skill-bar-percent">95%</div>
+                </div> <!-- End Skill Bar -->
+            </div> <!-- end of column 1 -->
 
-            <div class="box" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
-                <div class="percent">
-                    <svg>
-                        <circle cx="70" cy="70" r="70"></circle>
-                        <circle cx="70" cy="70" class="circle4" r="70"></circle>
-                    </svg>
-                    <div class="number">
-                        <h2>87<span>%</span></h2>
-                    </div>
-                </div>
-                <h2 class="text">Python</h2>
-            </div>
+            <div class="col-lg-6">
+                <div class="skillbar clearfix " data-percent="92%">
+                    <div class="skillbar-title" style="background: linear-gradient(to right, #654ea3, #eaafc8);"><span>CorelDraw</span></div>
+                    <div class="skillbar-bar" style="background: linear-gradient(to right, #654ea3, #eaafc8);"></div>
+                    <div class="skill-bar-percent">92%</div>
+                </div> <!-- End Skill Bar -->
 
-            <div class="box" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
-                <div class="percent">
-                    <svg>
-                        <circle cx="70" cy="70" r="70"></circle>
-                        <circle cx="70" cy="70" r="70" class="circle5"></circle>
-                    </svg>
-                    <div class="number">
-                        <h2>94<span>%</span></h2>
-                    </div>
-                </div>
-                <h2 class="text">C/C++</h2>
-            </div>
+                <div class="skillbar clearfix " data-percent="96%">
+                    <div class="skillbar-title" style="background: linear-gradient(to right, #ff416c, #ff4b2b);"><span>C/C++</span></div>
+                    <div class="skillbar-bar" style="background: linear-gradient(to right, #ff416c, #ff4b2b);"></div>
+                    <div class="skill-bar-percent">96%</div>
+                </div> <!-- End Skill Bar -->
 
-            <div class="box" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
-                <div class="percent">
-                    <svg>
-                        <circle cx="70" cy="70" r="70"></circle>
-                        <circle class="circle6" cx="70" cy="70" r="70"></circle>
-                    </svg>
-                    <div class="number">
-                        <h2>85<span>%</span></h2>
-                    </div>
-                </div>
-                <h2 class="text">Web Application Security</h2>
-            </div>
-
-            <div class="box" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
-                <div class="percent">
-                    <svg>
-                        <circle cx="70" cy="70" r="70"></circle>
-                        <circle cx="70" cy="70" class="circle7" r="70"></circle>
-                    </svg>
-                    <div class="number">
-                        <h2>96<span>%</span></h2>
-                    </div>
-                </div>
-                <h2 class="text">MS-Office</h2>
-            </div>
-
-            <div class="box" data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
-                <div class="percent">
-                    <svg>
-                        <circle cx="70" cy="70" r="70"></circle>
-                        <circle cx="70" cy="70" class="circle8" r="70"></circle>
-                    </svg>
-                    <div class="number">
-                        <h2>85<span>%</span></h2>
-                    </div>
-                </div>
-                <h2 class="text">MySQL</h2>
-            </div>
-
-            <div class="box" data-aos="fade-left" data-aos-offset="300" data-aos-easing="ease-in-sine">
-                <div class="percent">
-                    <svg>
-                        <circle cx="70" cy="70" r="70"></circle>
-                        <circle cx="70" cy="70" class="circle9" r="70"></circle>
-                    </svg>
-                    <div class="number">
-                        <h2>87<span>%</span></h2>
-                    </div>
-                </div>
-                <h2 class="text"></h2>
-            </div>
-
+                <div class="skillbar clearfix " data-percent="90%">
+                    <div class="skillbar-title" style="background: linear-gradient(to right, #a8ff78, #78ffd6);"><span>Python</span></div>
+                    <div class="skillbar-bar" style="background: linear-gradient(to right, #a8ff78, #78ffd6);"></div>
+                    <div class="skill-bar-percent">90%</div>
+                </div> <!-- End Skill Bar -->
+                
+                <div class="skillbar clearfix " data-percent="87%">
+                    <div class="skillbar-title" style="background: linear-gradient(to right, #ed213a, #93291e);"><span>WebSecurity</span></div>
+                    <div class="skillbar-bar" style="background: linear-gradient(to right, #ed213a, #93291e);"></div>
+                    <div class="skill-bar-percent">87%</div>
+                </div> <!-- End Skill Bar -->
+                
+                <div class="skillbar clearfix " data-percent="85%">
+                    <div class="skillbar-title" style="background: linear-gradient(to right, #59c173, #a17fe0, #5d26c1);"><span>MySQL</span></div>
+                    <div class="skillbar-bar" style="background: linear-gradient(to right, #59c173, #a17fe0, #5d26c1);"></div>
+                    <div class="skill-bar-percent">85%</div>
+                </div> <!-- End Skill Bar -->
+                
+                <div class="skillbar clearfix " data-percent="95%">
+                    <div class="skillbar-title" style="background: linear-gradient(to right, #355c7d, #6c5b7b, #c06c84);"><span>MS-Office</span></div>
+                    <div class="skillbar-bar" style="background: linear-gradient(to right, #355c7d, #6c5b7b, #c06c84);"></div>
+                    <div class="skill-bar-percent">95%</div>
+                </div> <!-- End Skill Bar -->
+            </div> <!-- end of column 2 -->
         </div>
     </section>
 
@@ -248,8 +199,8 @@
         </center>
     </section>
 
-   
-    
+
+
 
     <section class="contact-me" id="contact">
         <h2>contact me</h2>
@@ -281,7 +232,7 @@
             <div></div>
         </div>
     </a>
-    
+
     <div class="box-loader">
         <div class="circle-loader" id="one1">
             <div class="circle" id="two2">
@@ -289,7 +240,7 @@
             </div>
         </div>
     </div>
-   
+
     <script src="https://code.jquery.com/jquery-3.4.0.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
@@ -298,7 +249,5 @@
     <script>
         AOS.init();
     </script>
-       
-</body>
 
-</html>
+</body></html>
