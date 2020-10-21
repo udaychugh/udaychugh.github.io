@@ -57,30 +57,30 @@ function scrollFunction() {
 }
 
 
+function uncheck()
+{
+document.getElementById("hamburger-toggle").checked=false;
+}
 
-//Hamburger menu 
-$(document).ready(function(){ 
 
-/* Hamburger menu animation */
-$('.open-button').click(function () {
-    $(this).toggleClass('open');
-});
 
-/* Menu fade/in out on mobile */
-$(".open-button").click(function (e) {
-e.preventDefault();
-$(".nav-display").toggleClass('open');
-$(".nav-display").removeClass('hide');
-});
-});
-
-$(document).ready(function () {
-    $(".nav-display a").click(function () {
-        $(".nav-display").toggleClass('open');
-        $(".nav-display").toggleClass('hide');
-        $(".open-button").removeClass('open');
+var offsetTop = $('#skills').offset().top;
+	$(window).scroll(function() {
+  var height = $(window).height();
+  if($(window).scrollTop()+height > offsetTop) {
+    jQuery('.skillbar').each(function(){
+      jQuery(this).find('.skillbar-bar').animate({
+        width:jQuery(this).attr('data-percent')
+      },2000);
     });
-});
+  }
+  });
 
-
+// jQuery(document).ready(function(){
+// 	jQuery('.skillbar').each(function(){
+// 		jQuery(this).find('.skillbar-bar').animate({
+// 			width:jQuery(this).attr('data-percent')
+// 		},6000);
+// 	});
+// });
 
