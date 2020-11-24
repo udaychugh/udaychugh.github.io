@@ -1,7 +1,7 @@
 /* Preloader */ 
 $(window).on( "load", function() 
 {  
-	$(".box-loader").fadeOut("slow"); 
+	$(".loader").fadeOut("slow"); 
 })
 
 /*Smooth scroll */
