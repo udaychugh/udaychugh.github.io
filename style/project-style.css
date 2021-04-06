@@ -266,3 +266,49 @@ body {
     }
 }
 
+.navbox{
+    display: flex;
+    padding: 20px;
+    padding-top: 70px;
+    justify-content: space-between;
+}
+
+.htm{
+    padding: 10px;
+}
+
+.htm h2{
+    text-transform: uppercase;
+    color: red;
+    padding-bottom: 10px;
+}
+
+.htm a, .py a{
+    text-decoration: none;
+    color: white;
+    padding: 5px;
+    text-transform: capitalize;
+    justify-content: space-between;
+    transition: all 0.3s linear;
+}
+
+.htm a:hover, .py a:hover{
+    color: aqua;
+    text-decoration: underline;
+}
+
+.py h2{
+    text-transform: uppercase;
+    color: red;
+    padding-bottom: 10px;
+}
+
+.web-list, .py-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.web-list a:nth-child(5){
+    
+}
