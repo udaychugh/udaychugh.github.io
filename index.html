@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,8 +26,8 @@
         <div class="container">
             <div><a class="logo" href="index.html">Uday Chugh.</a></div>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-			        <span class="mdi mdi-menu"><i class="fas fa-bars"></i></span>
-			    </button>
+                <span class="mdi mdi-menu"><i class="fas fa-bars"></i></span>
+            </button>
             <div class="collapse navbar-collapse navigation" id="navbarCollapse">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item active">
@@ -480,6 +481,7 @@
                                 <div class="col-lg-6 col-md-6 col-sm-6">
                                     <div class="event event-description-right rounded p-4 border text-left">
                                         <h5 class="title mb-0 text-capitalize">Web Development</h5>
+                                        <h6 class="text-capitalize text-muted">Osho Darshan</h6>
                                         <small class="company">Dec, 2020 - Feb, 2021</small>
                                         <p class="timeline-subtitle mt-3 mb-0 text-muted"></p>
                                     </div>
@@ -495,6 +497,7 @@
                                 <div class="col-lg-6 col-md-6 col-sm-6 order-sm-1 order-2">
                                     <div class="event event-description-left rounded p-4 border text-right">
                                         <h5 class="title mb-0 text-capitalize">UI/UX Design</h5>
+                                        <h6 class="text-capitalize text-muted">LeoDeo</h6>
                                         <small class="company">March, 2021 - May, 2021</small>
                                         <p class="timeline-subtitle mt-3 mb-0 text-muted"></p>
                                     </div>
@@ -508,6 +511,26 @@
                             <!--end row-->
                         </div>
                         <!--end timeline item-->
+                        
+                        <div class="timeline-item mt-4">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-6">
+                                    <div class="date-label-left border rounded"></div>
+                                    <div class="duration position-relative shadow text-center">3</div>
+                                </div>
+                                <!--end col-->
+                                <div class="col-lg-6 col-md-6 col-sm-6">
+                                    <div class="event event-description-right rounded p-4 border text-left">
+                                        <h5 class="title mb-0 text-capitalize">Web Development</h5>
+                                        <h6 class="text-capitalize text-muted">Lg Community Partners</h6>
+                                        <small class="company">Sep, 2021 - Dec, 2021</small>
+                                        <p class="timeline-subtitle mt-3 mb-0 text-muted"></p>
+                                    </div>
+                                </div>
+                                <!--end col-->
+                            </div>
+                            <!--end row-->
+                        </div>
 
                         <!--end timeline item-->
                     </div>
@@ -930,12 +953,14 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-sm-12">
-                                    <input type="submit" id="submit" name="send" class="submitBnt btn btn-primary" value="Send Message">
+                                <div class="col-sm-12"> 
+                                    <input type="submit" onclick="alert('form submitted')" id="submit" name="send" class="submitBnt btn btn-primary" value="Send Message">
                                     <div id="simple-msg"></div>
                                 </div>
                                 <!--end col-->
                             </div>
+                            <input type="hidden" name="_redirect" value="https://lgpartners.com.au/#contact" />
+                            <input type="hidden" name="_append" value="false" />
                             <!--end row-->
                         </form>
                         <!--end form-->
@@ -1057,4 +1082,6 @@
 
     <!-- Main Js -->
     <script src="script/script.js"></script>
-</body></html>
+</body>
+
+</html>
