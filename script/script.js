@@ -165,6 +165,12 @@ TxtRotate.prototype.tick = function () {
 };
 
 window.onload = function () {
+    //preloader
+    $(".preloader").delay(2000).fadeOut("slow", function(){
+        $('body').css("overflow-y", "visible");
+    });
+        
+    //my date
     var elements = document.getElementsByClassName('txt-rotate');
     for (var i = 0; i < elements.length; i++) {
         var toRotate = elements[i].getAttribute('data-rotate');
@@ -178,4 +184,21 @@ window.onload = function () {
     css.type = "text/css";
     css.innerHTML = ".txt-rotate > .wrap { border-right: 0.08em solid #666 }";
     document.body.appendChild(css);
+    
+    
+    var today = new Date();
+    var year = today.getFullYear();
+    var month = today.getMonth();
+    var date = today.getDate();
+    if(month >= 8)
+        {
+            var age = year - 2001;
+            document.getElementById("myage").innerHTML = age;
+        }
+    else{
+        var age = year - 2002;
+        document.getElementById("myage").innerHTML = age;
+    }
 };
+
+

@@ -15,6 +15,8 @@
     <link rel="stylesheet" href="style/owl.carousel.min.css">
     <link rel="stylesheet" href="style/owl.theme.css">
     <link rel="stylesheet" href="style/owl.transitions.css">
+    <!-- preloader css file -->
+    <link rel="stylesheet" href="style/preloader.css">
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <!-- FavIcon -->
@@ -121,7 +123,7 @@
                             </div>
                             <div class="row">
                                 <div class="col-12 col-md-6 mb-3 single-info"><span class="mr-3">Age:</span>
-                                    <p class="text-muted">20</p>
+                                    <p class="text-muted" id="myage"></p>
                                 </div>
                                 <div class="col-12 col-md-6 mb-3 single-info"><span class="mr-3">From:</span>
                                     <p class="text-muted">New Delhi, India</p>
@@ -440,7 +442,7 @@
                     <div class="section-title text-center text-white">
                         <h3 class="title mb-4">I Am Available For Freelancer Projects.</h3>
                         <p class="text-white mx-auto mb-4 para-desc"></p>
-                        <a href="https://www.fiverr.com/chughuday" target="_blank" class="btn btn-primary mouse-down">Hire me <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down fea icon-sm">
+                        <a href="https://www.linkedin.com/in/udaychugh" target="_blank" class="btn btn-primary mouse-down">Hire me <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-chevron-down fea icon-sm">
                                 <polyline points="6 9 12 15 18 9"></polyline>
                             </svg></a>
                     </div>
@@ -523,9 +525,29 @@
                                     <div class="event event-description-right rounded p-4 border text-left">
                                         <h5 class="title mb-0 text-capitalize">Web Development</h5>
                                         <h6 class="text-capitalize text-muted">Lg Community Partners</h6>
-                                        <small class="company">Sep, 2021 - Dec, 2021</small>
+                                        <small class="company">Aug, 2021 - Nov, 2021</small>
                                         <p class="timeline-subtitle mt-3 mb-0 text-muted"></p>
                                     </div>
+                                </div>
+                                <!--end col-->
+                            </div>
+                            <!--end row-->
+                        </div>
+                        
+                        
+                        <div class="timeline-item mt-4">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-6 order-sm-1 order-2">
+                                    <div class="event event-description-left rounded p-4 border text-right">
+                                        <h5 class="title mb-0 text-capitalize">Full Stack Development</h5>
+                                        <h6 class="text-capitalize text-muted">DevTown</h6>
+                                        <small class="company">Dec, 2021 - April, 2022</small>
+                                        <p class="timeline-subtitle mt-3 mb-0 text-muted"></p>
+                                    </div>
+                                </div>
+                                <!--end col-->
+                                <div class="col-lg-6 col-md-6 col-sm-6 order-sm-2 order-1">
+                                    <div class="duration duration-right rounded border position-relative text-center">4</div>
                                 </div>
                                 <!--end col-->
                             </div>
@@ -793,49 +815,6 @@
         <!--end container-->
     </section>
 
-    <section class="section">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-12 text-center">
-                    <div class="section-title mb-4 pb-2">
-                        <h4 class="title mb-4">Clients &amp; Reviews</h4>
-                        <p class="text-muted mx-auto para-desc mb-0">Experienced with all stages of the development cycle for dynamic web projects.</p>
-                    </div>
-                </div>
-                <!--end col-->
-            </div>
-
-            <div class="row">
-                <div class="col-12 mt-4 pt-2">
-                    <div id="clients-testi" class="owl-carousel mt-3 owl-theme" style="opacity: 1; display: block;">
-                        <!--Start Client-->
-                        <div class="owl-wrapper-outer">
-                            <div class="owl-wrapper" style="width: 8880px; left: 0px; display: block; transition: all 800ms ease 0s; transform: translate3d(-1110px, 0px, 0px);">
-                                <div class="owl-item" style="width: 1110px;">
-                                    <div class="client-review position-relative text-center mx-auto">
-                                        <div class="thumb mb-3 mx-auto">
-                                            <img src="image/projects/avtar.png" alt="customer-name">
-                                        </div>
-                                        <h5 class="mt-3 mb-0">John Doe</h5>
-                                        <span class="subtitle text-primary">Product designer at Dribbble</span>
-                                        <div class="bg-white p-4 rounded triangle-top position-relative mt-4 mb-4">
-                                            <p class="mb-0">I enjoy working with the theme and learn so much. You guys make the process fun and interesting. Good luck! 👍</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                    <!--end testi review-->
-                </div>
-                <!--end col-->
-            </div>
-            <!--end row-->
-        </div>
-        <!--end container-->
-    </section>
-
     <section class="section bg-light" id="news">
         <div class="container">
             <div class="row justify-content-center">
@@ -1042,6 +1021,10 @@
         </div>
         <!--end container-->
     </section>
+    
+    <div class="preloader">
+        <div class="mexican-wave"></div>
+    </div>
 
     <a href="http://zoyothemes.com/eegno/layout/index-waves.html#" class="back-to-top rounded text-center" id="back-to-top" style="display: none;">
         <i class="fas fa-chevron-up"></i>
@@ -1082,6 +1065,9 @@
 
     <!-- Main Js -->
     <script src="script/script.js"></script>
+    
+    <!-- preloader js -->
+    <script src="script/preloader.js"></script>
 </body>
 
 </html>
