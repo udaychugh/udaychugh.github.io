@@ -1593,7 +1593,7 @@ p {
     margin: 5px 7px;
     background: #61cccc !important;
     border-radius: 3px;
-    *display: inline;
+    display: inline;
     opacity: 1;
     height: 6px;
     width: 20px;
